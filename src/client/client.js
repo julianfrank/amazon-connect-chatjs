@@ -76,7 +76,7 @@ class AWSChatClient extends ChatClient {
     var creds = new AWS.Credentials('','');
     var config = new AWS.Config({
       region: args.region,
-      endpoint: args.endpoint,
+      endpoint: "https://2me8bbt55g.execute-api.us-west-2.amazonaws.com/gamma",
       credentials: creds
     });
     this.chatClient = new AWS.ConnectParticipant(config);
